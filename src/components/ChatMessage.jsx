@@ -1,13 +1,10 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { FaUserMd, FaUser } from 'react-icons/fa';
 
-interface ChatMessageProps {
-  message: string;
-  isBot: boolean;
-  timestamp: string;
-}
 
-export const ChatMessage = ({ message, isBot, timestamp }: ChatMessageProps) => {
+
+export const ChatMessage = ({ message, isBot, timestamp }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

@@ -2,14 +2,12 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaPaperPlane } from 'react-icons/fa';
 
-interface ChatInputProps {
-  onSend: (message: string) => void;
-}
 
-export const ChatInput = ({ onSend }: ChatInputProps) => {
+
+export const ChatInput = ({ onSend }) => {
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (message.trim()) {
       onSend(message);

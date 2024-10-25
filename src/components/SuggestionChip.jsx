@@ -1,11 +1,7 @@
 import { motion } from 'framer-motion';
 
-interface SuggestionChipProps {
-  text: string;
-  onClick: () => void;
-}
 
-export const SuggestionChip = ({ text, onClick }: SuggestionChipProps) => {
+export const SuggestionChip = ({ text, onClick }) => {
   return (
     <motion.button
       whileHover={{ scale: 1.05, y: -5 }}
